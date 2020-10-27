@@ -55,7 +55,7 @@ public final class GuestBook extends WicketExamplePage
 		add(new CommentForm("commentForm"));
 
 		// Add commentListView of existing comments
-		add(new PropertyListView<>("comments", commentList)
+		add(new PropertyListView<Comment>("comments", commentList)
 		{
 			@Override
 			public void populateItem(final ListItem<Comment> listItem)
@@ -104,7 +104,7 @@ public final class GuestBook extends WicketExamplePage
 
 			// check if the honey pot is filled
 			final String _comment = (String) values.get("comment");
-			if (_comment != null && !_comment.isBlank())
+			if (_comment != null && !_comment.isEmpty())
 			{
 				error("Caught a spammer!!!");
 				return;

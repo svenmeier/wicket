@@ -53,7 +53,7 @@ class SubmitLinkTest extends WicketTestCase
 		/** */
 		TestPage()
 		{
-			add(form = new Form<>("form")
+			add(form = new Form<Void>("form")
 			{
 				protected void onSubmit()
 				{

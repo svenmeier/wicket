@@ -127,8 +127,8 @@
 		<maven.compiler.optimize>true</maven.compiler.optimize>
 		<maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
 		<maven.compiler.showWarnings>true</maven.compiler.showWarnings>
-		<maven.compiler.source>11</maven.compiler.source>
-		<maven.compiler.target>11</maven.compiler.target>
+		<maven.compiler.source>8</maven.compiler.source>
+		<maven.compiler.target>8</maven.compiler.target>
 
 		<!-- Project Versions -->
 		<asm.version>8.0.1</asm.version>
@@ -154,7 +154,7 @@
 		<jakarta.validation-api.version>2.0.2</jakarta.validation-api.version>
 		<jakarta.websocket-api.version>1.1.2</jakarta.websocket-api.version>
 		<javax.servlet-api.version>3.1.0</javax.servlet-api.version>
-		<jdk-serializable-functional.version>1.9.0</jdk-serializable-functional.version>
+		<jdk-serializable-functional.version>1.8.6</jdk-serializable-functional.version>
 		<jetty.version>9.4.31.v20200723</jetty.version>
 		<junit.version>5.7.0</junit.version>
 		<jsr305.version>3.0.2</jsr305.version>
@@ -189,7 +189,7 @@
 		<maven-remote-resources-plugin.version>1.7.0</maven-remote-resources-plugin.version>
 		<maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
 		<maven-site-plugin.version>3.9.0</maven-site-plugin.version>
-		<maven-surefire-plugin.version>3.0.0-M4</maven-surefire-plugin.version>
+		<maven-surefire-plugin.version>3.0.0-M1</maven-surefire-plugin.version>
 		<maven-source-plugin.version>3.2.1</maven-source-plugin.version>
 		<maven-toolchains-plugin.version>3.0.0</maven-toolchains-plugin.version>
 		<maven-war-plugin.version>3.3.1</maven-war-plugin.version>
@@ -875,7 +875,6 @@
 					<version>${maven-compiler-plugin.version}</version>
 					<inherited>true</inherited>
 					<configuration>
-						<release>${maven.compiler.source}</release>
 					</configuration>
 				</plugin>
 				<plugin>
@@ -1090,7 +1089,7 @@
 						<includes>
 							<include>**/*Test.java</include>
 						</includes>
-						<argLine>--add-opens java.base/jdk.internal.loader=ALL-UNNAMED --add-modules=ALL-SYSTEM</argLine>
+						<useSystemClassLoader>false</useSystemClassLoader>
 					</configuration>
 				</plugin>
 				<plugin>

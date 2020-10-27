@@ -49,9 +49,9 @@ public class Durations
 				return unitString(duration.toMinutes(), "minute", locale);
 			}
 
-			if (duration.toSeconds() >= 1.0)
+			if (duration.toMillis() / 1000 >= 1.0)
 			{
-				return unitString(duration.toSeconds(), "second", locale);
+				return unitString(duration.toMillis() / 1000, "second", locale);
 			}
 
 			return unitString(duration.toMillis(), "millisecond", locale);

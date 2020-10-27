@@ -89,7 +89,7 @@ class AjaxFormSubmitBehaviorTest extends WicketTestCase
 		
 		public NestedFormTestPage()
 		{
-			Form<Void> inner = new Form<>("inner") {
+			Form<Void> inner = new Form<Void>("inner") {
 				@Override
 				protected boolean wantSubmitOnParentFormSubmit() {
 					return false;

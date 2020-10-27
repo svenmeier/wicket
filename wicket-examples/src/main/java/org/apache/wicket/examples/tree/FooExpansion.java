@@ -39,7 +39,7 @@ public class FooExpansion implements Set<Foo>, Serializable
 {
 	private static final long serialVersionUID = 1L;
 
-	private static MetaDataKey<FooExpansion> KEY = new MetaDataKey<>()
+	private static MetaDataKey<FooExpansion> KEY = new MetaDataKey<FooExpansion>()
 	{
 		private static final long serialVersionUID = 1L;
 	};

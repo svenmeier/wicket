@@ -82,7 +82,7 @@ final class ConvertersTest
 		char groupingSeparator = decimalFormatSymbols.getGroupingSeparator();
 		String currencySymbol = decimalFormatSymbols.getCurrencySymbol();
 
-		String expected = format("1%s234,00\u00A0%s", groupingSeparator, currencySymbol);
+		String expected = format("1%s234,00 %s", groupingSeparator, currencySymbol);
 
 		assertEquals(expected, fc.convertToString(1234f, locale));
 		assertEquals(Float.valueOf(1234f), fc.convertToObject(expected, locale));

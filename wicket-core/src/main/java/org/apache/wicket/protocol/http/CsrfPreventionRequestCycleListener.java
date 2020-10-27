@@ -106,7 +106,7 @@ import org.slf4j.LoggerFactory;
  *
  * @deprecated Use {@link FetchMetadataResourceIsolationPolicy} instead
  */
-@Deprecated(since = "9.1.0")
+@Deprecated
 public class CsrfPreventionRequestCycleListener extends OriginResourceIsolationPolicy implements IRequestCycleListener
 {
 	private static final Logger log = LoggerFactory

@@ -38,7 +38,7 @@ import java.util.Set;
  *
  * @deprecated Please use {@link Map#of(Object, Object)} instead
  */
-@Deprecated(forRemoval = true, since = "9.0.0")
+@Deprecated()
 public final class MicroMap<K, V> implements Map<K, V>, Serializable
 {
 	private static final long serialVersionUID = 1L;

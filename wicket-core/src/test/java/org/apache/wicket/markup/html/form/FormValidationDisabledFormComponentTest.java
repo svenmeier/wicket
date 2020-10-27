@@ -123,7 +123,7 @@ class FormValidationDisabledFormComponentTest extends WicketTestCase
 
 		public TestPage()
 		{
-			form = new Form<>("form")
+			form = new Form<Void>("form")
 			{
 				@Override
 				protected void onSubmit()

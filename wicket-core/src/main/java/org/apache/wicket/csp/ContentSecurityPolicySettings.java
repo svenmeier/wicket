@@ -61,7 +61,7 @@ public class ContentSecurityPolicySettings
 	// The number of bytes to use for a nonce, 18 will result in a 24 char nonce.
 	private static final int NONCE_LENGTH = 18;
 
-	public static final MetaDataKey<String> NONCE_KEY = new MetaDataKey<>()
+	public static final MetaDataKey<String> NONCE_KEY = new MetaDataKey<String>()
 	{
 		private static final long serialVersionUID = 1L;
 	};

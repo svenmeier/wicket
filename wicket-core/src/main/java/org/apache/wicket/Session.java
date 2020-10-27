@@ -114,13 +114,13 @@ public abstract class Session implements IClusterable, IEventSink, IMetadataCont
 	private static final Logger log = LoggerFactory.getLogger(Session.class);
 
 	/** records if pages have been unlocked for the current request */
-	private static final MetaDataKey<Boolean> PAGES_UNLOCKED = new MetaDataKey<>()
+	private static final MetaDataKey<Boolean> PAGES_UNLOCKED = new MetaDataKey<Boolean>()
 	{
 		private static final long serialVersionUID = 1L;
 	};
 	
 	/** records if session has been invalidated by the current request */
-	private static final MetaDataKey<Boolean> SESSION_INVALIDATED = new MetaDataKey<>()
+	private static final MetaDataKey<Boolean> SESSION_INVALIDATED = new MetaDataKey<Boolean>()
 	{
 		private static final long serialVersionUID = 1L;
 	};

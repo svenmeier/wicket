@@ -180,7 +180,15 @@ public abstract class ApacheLicenseHeaderTestCase
 					// Find the license type
 					String licenseType = licenseHeaderHandler.getLicenseType(file);
 
-					failString.append(Objects.requireNonNullElse(licenseType, "NONE"));
+					if (licenseType == null)
+					{
+						failString.append("NONE");
+					}
+					else
+					{
+						failString.append(licenseType);
+					}
+
 					failString.append(' ').append(filename).append(LINE_ENDING);
 				}
 			}

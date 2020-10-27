@@ -39,13 +39,13 @@ public class ZonedDateTimeConverterTest
 	public void convertToString() {
 		ZonedDateTimeConverter converter = new ZonedDateTimeConverter();
 		String date = converter.convertToString(ZonedDateTime.of(2016, 7, 11, 1, 2, 3, 0, zoneUCT), Locale.ENGLISH);
-		assertEquals(date, "Jul 11, 2016, 1:02:03 AM Coordinated Universal Time");
+		assertEquals(date, "Jul 11, 2016 1:02:03 AM UTC");
 	}
 
 	@Test
 	public void convertToObject() {
 		ZonedDateTimeConverter converter = new ZonedDateTimeConverter();
-		ZonedDateTime date = converter.convertToObject("Jul 11, 2016, 1:02:03 AM Coordinated Universal Time", Locale.ENGLISH);
+		ZonedDateTime date = converter.convertToObject("Jul 11, 2016 1:02:03 AM Etc/UTC", Locale.ENGLISH);
 		assertEquals(ZonedDateTime.of(2016, 7, 11, 1, 2, 3, 0, zoneUTC), date);
 	}
 

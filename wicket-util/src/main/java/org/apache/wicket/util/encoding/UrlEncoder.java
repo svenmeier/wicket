@@ -239,7 +239,8 @@ public class UrlEncoder
 			{
 				if (b == '\0')
 				{
-					bos.writeBytes("NULL".getBytes(charset));
+					byte[] temp = "NULL".getBytes(charset);
+					bos.write(temp, 0, temp.length);
 				}
 				else
 				{

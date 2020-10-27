@@ -42,7 +42,7 @@ public class VelocityJavaScriptPage extends WebPage
 		String javascript = "msg1: Stoopid test 1\nmsg2: Stooopid test 2";
 		JavaScriptUtils.writeJavaScript(getResponse(), javascript, id);
 
-		IModel<MiniMap<String, Object>> model = new IModel<>()
+		IModel<MiniMap<String, Object>> model = new IModel<MiniMap<String, Object>>()
 		{
 			private static final long serialVersionUID = 1L;
 

@@ -40,7 +40,7 @@ public abstract class GroupingPageStore extends DelegatingPageStore
 
 	private static final String DEFAULT_GROUP = "default";
 
-	private static final MetaDataKey<SessionData> KEY = new MetaDataKey<>()
+	private static final MetaDataKey<SessionData> KEY = new MetaDataKey<SessionData>()
 	{
 		private static final long serialVersionUID = 1L;
 	};

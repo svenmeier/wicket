@@ -423,7 +423,7 @@ public class PagingNavigation extends Loop
 		public void onComponentTag(Component component, ComponentTag tag)
 		{
 			String pageIndex = String.valueOf(page + 1).intern();
-			Map<String, String> vars = Map.of("page", pageIndex);
+			Map<String, String> vars = new MicroMap("page", pageIndex);
 			tag.put("title", PagingNavigation.this.getString(RES, Model.ofMap(vars)));
 		}
 	}

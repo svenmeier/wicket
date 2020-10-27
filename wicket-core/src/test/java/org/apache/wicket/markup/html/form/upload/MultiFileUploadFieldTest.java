@@ -111,7 +111,7 @@ class MultiFileUploadFieldTest extends WicketTestCase
 	{
 		TestPage(final ListModel<FileUpload> model)
 		{
-			Form f = new Form<>("f")
+			Form f = new Form<Void>("f")
 			{
 				@Override
 				protected void onSubmit()

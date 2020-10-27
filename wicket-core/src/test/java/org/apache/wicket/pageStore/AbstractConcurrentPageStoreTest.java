@@ -195,7 +195,7 @@ public abstract class AbstractConcurrentPageStoreTest
 				if (page != null)
 				{
 					SerializedPage other = (SerializedPage)pageStore.getPage(getContext(page.getPageType()), page.getPageId());
-					if (Arrays.compare(page.getData(), other.getData()) != 0)
+					if (Arrays.equals(page.getData(), other.getData()) == false)
 					{
 						failures.incrementAndGet();
 						log.error("Detected error number: " + failures.get());
@@ -230,7 +230,7 @@ public abstract class AbstractConcurrentPageStoreTest
 				if (page != null)
 				{
 					SerializedPage other = (SerializedPage)pageStore.getPage(getContext(page.getPageType()), page.getPageId());
-					if (Arrays.compare(page.getData(), other.getData()) != 0)
+					if (Arrays.equals(page.getData(), other.getData()) == false)
 					{
 						failures.incrementAndGet();
 						log.error("Detected error number: " + failures.get());

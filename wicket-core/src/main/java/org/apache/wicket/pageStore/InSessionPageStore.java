@@ -43,7 +43,7 @@ import org.apache.wicket.util.lang.Classes;
 public class InSessionPageStore implements IPageStore
 {
 
-	private static final MetaDataKey<SessionData> KEY = new MetaDataKey<>()
+	private static final MetaDataKey<SessionData> KEY = new MetaDataKey<SessionData>()
 	{
 		private static final long serialVersionUID = 1L;
 	};

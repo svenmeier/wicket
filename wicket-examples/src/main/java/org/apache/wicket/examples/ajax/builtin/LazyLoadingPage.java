@@ -103,7 +103,7 @@ public class LazyLoadingPage extends BasePage
 				protected boolean isContentReady()
 				{
 					return Duration.ofMillis(System.currentTimeMillis() - startTime)
-						.toSeconds() > seconds;
+						.toMillis() / 1000 > seconds;
 				}
 				
 				@Override

@@ -30,7 +30,7 @@ class FormSubmitOrderTest extends WicketTestCase
 
         public TestPage()
 		{
-			Form form = new Form<>("form")
+			Form form = new Form<Void>("form")
 			{
 				@Override
 				protected void onSubmit()

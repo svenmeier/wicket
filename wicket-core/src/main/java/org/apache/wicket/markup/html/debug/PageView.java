@@ -62,7 +62,7 @@ public final class PageView extends Panel
 	 * A meta data key used by RenderPerformaceListener in wicket-devutils to collect the time
 	 * needed by a component to render itself
 	 */
-	public static final MetaDataKey<Long> RENDER_KEY = new MetaDataKey<>()
+	public static final MetaDataKey<Long> RENDER_KEY = new MetaDataKey<Long>()
 	{
 	};
 

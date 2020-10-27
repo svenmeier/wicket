@@ -34,7 +34,7 @@ public class RequestPageStore extends DelegatingPageStore
 
 	private static final Logger log = LoggerFactory.getLogger(RequestPageStore.class);
 
-	private static final MetaDataKey<RequestData> KEY = new MetaDataKey<>()
+	private static final MetaDataKey<RequestData> KEY = new MetaDataKey<RequestData>()
 	{
 		private static final long serialVersionUID = 1L;
 	};

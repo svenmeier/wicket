@@ -54,7 +54,7 @@ public abstract class AbstractRequestLogger implements IRequestLogger
 	/**
 	 * Key for storing request data in the request cycle's meta data.
 	 */
-	private static MetaDataKey<RequestData> REQUEST_DATA = new MetaDataKey<>()
+	private static MetaDataKey<RequestData> REQUEST_DATA = new MetaDataKey<RequestData>()
 	{
 		private static final long serialVersionUID = 1L;
 	};
@@ -62,7 +62,7 @@ public abstract class AbstractRequestLogger implements IRequestLogger
 	/**
 	 * Key for storing session data in the request cycle's meta data.
 	 */
-	private static MetaDataKey<SessionData> SESSION_DATA = new MetaDataKey<>()
+	private static MetaDataKey<SessionData> SESSION_DATA = new MetaDataKey<SessionData>()
 	{
 		private static final long serialVersionUID = 1L;
 	};

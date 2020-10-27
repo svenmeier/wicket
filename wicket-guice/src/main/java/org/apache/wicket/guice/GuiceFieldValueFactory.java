@@ -98,7 +98,7 @@ public class GuiceFieldValueFactory implements IFieldValueFactory
 						}
 					}
 
-					if (!field.canAccess(fieldOwner))
+					if (!field.isAccessible())
 					{
 						field.setAccessible(true);
 					}

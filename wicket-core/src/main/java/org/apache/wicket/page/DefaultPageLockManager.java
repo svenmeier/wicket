@@ -42,7 +42,7 @@ public class DefaultPageLockManager implements IPageLockManager {
 	private static final Logger logger = LoggerFactory.getLogger(DefaultPageLockManager.class);
 
 	/** map of which pages are owned by which threads */
-	private final LazyInitializer<ConcurrentMap<Integer, PageAccessSynchronizer.PageLock>> locks = new LazyInitializer<>()
+	private final LazyInitializer<ConcurrentMap<Integer, PageAccessSynchronizer.PageLock>> locks = new LazyInitializer<ConcurrentMap<Integer, PageAccessSynchronizer.PageLock>>()
 	{
 		private static final long serialVersionUID = 1L;
 
